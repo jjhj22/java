@@ -26,9 +26,28 @@ public class Input2 {
 		Scanner scan = new Scanner(System.in);
 		
 		
-		String 직원1, 직원2, 소속부서명1, 소속부서명2, 월급1, 월급2;
-		int 세금=8;
-		System.out.println();
+		String 직원1, 직원2, 소속부서명1, 소속부서명2;
+		float 세금=0.08f, 월급1, 월급2;
+		
+		
+		System.out.println("이름:");
+		직원1=scan.next();
+		System.out.println("소속부서:");
+		소속부서명1=scan.next();
+		System.out.println("월급:");
+		월급1=scan.nextInt();
+		float 실수령액1=월급1-(월급1*세금);
+		System.out.println("이름:");
+		직원2=scan.next();
+		System.out.println("소속부서:");
+		소속부서명2=scan.next();
+		System.out.println("월급:");
+		월급2=scan.nextInt();
+//		float 실수령액2=월급2-(월급2*세금);
+		int 실수령액2=(int)(월급2-(월급2*세금)); // 앞에 데이터타입을 붙여주면 강제로 타입변환, 변환되는 데이터에 정수가 포함되어 있기에 가능
+		
+		System.out.printf("이름:%s, 소속부서:%s 실수령액:%f\n",직원1,소속부서명1,실수령액1);
+		System.out.printf("이름:%s, 소속부서:%s 실수령액:%f\n",직원2,소속부서명2,실수령액2);
 		
 
 	}

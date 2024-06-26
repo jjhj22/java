@@ -108,7 +108,7 @@ public class Java0626two {
 		int 평균=총점/3;
 //		System.out.println("총첨은:"+총점);
 //		System.out.println("평균은"+평균);
-		System.out.printf("총점:%d점, 평균:%d점 \n",총점,평균);
+		System.out.printf("총점:%d점, 평균:%d점",총점,평균);
 		
 		
 	}
