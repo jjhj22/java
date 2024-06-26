@@ -70,7 +70,7 @@ public class Java0626 {
 		System.out.print(172.3);
 		System.out.printf("\n %.1f\n",172.315);
 		System.out.println(3);
-		System.out.printf("%5d",3);
+		System.out.printf("%5d",3); 
 		
 
 		
