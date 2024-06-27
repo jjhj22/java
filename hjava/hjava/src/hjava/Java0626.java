@@ -72,6 +72,8 @@ public class Java0626 {
 		System.out.println(3);
 		System.out.printf("%5d",3); 
 		
+		//키보드를 눌렀을 때 바로 ram에 저장되는게 아니고 (버퍼)라는 곳에 저장된 후 운영체제가 꺼내감
+		
 
 		
 		
