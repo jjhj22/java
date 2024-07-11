@@ -15,6 +15,8 @@ public class Member {
 	public String toString() {
 		return name+", "+age+", "+birth;
 	}
+	
+	
 
 	public String getName() {
 		return name;
