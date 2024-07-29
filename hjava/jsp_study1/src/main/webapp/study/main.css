@@ -5,7 +5,8 @@
 	position:relative;
 }
 #slider{
-	background:url('https://picsum.photos/1000/300');
+	background:url('https://picsum.photos/1000/300') no-repeat center;
+	background-size:cover;
 	height:300px;
 }
 #recently{
