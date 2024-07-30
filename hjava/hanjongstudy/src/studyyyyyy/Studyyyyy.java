@@ -59,30 +59,47 @@ public class Studyyyyy {
 //		System.out.println(al.get(2).getYear());
 //		
 		
-		Member mb1= new Member("한종",23,"백수");
-		Member mb2= new Member("두종",25,"연구원");
-		Member mb3= new Member("세종",27,"개발자");
-		Member mb4= new Member("네종",53,"해적");
-		Member mb5= new Member("오종",41,"농부");
-		Member mb6= new Member("육종",74,"의사");
-		Member mb7= new Member("칠종",67,"미용사");
-		Member mb8= new Member("팔종",38,"목수");
+//		Member mb1= new Member("한종",23,"백수");
+//		Member mb2= new Member("두종",25,"연구원");
+//		Member mb3= new Member("세종",27,"개발자");
+//		Member mb4= new Member("네종",53,"해적");
+//		Member mb5= new Member("오종",41,"농부");
+//		Member mb6= new Member("육종",74,"의사");
+//		Member mb7= new Member("칠종",67,"미용사");
+//		Member mb8= new Member("팔종",38,"목수");
+//		
+//		ArrayList<Member> ar = new ArrayList<Member>();
+//		
+//		ar.add(mb1);
+//		ar.add(mb2);
+//		ar.add(mb3);
+//		ar.add(mb4);
+//		ar.add(mb5);
+//		ar.add(mb6);
+//		ar.add(mb7);
+//		ar.add(mb8);
 		
-		ArrayList<Member> ar = new ArrayList<Member>();
 		
-		ar.add(mb1);
-		ar.add(mb2);
-		ar.add(mb3);
-		ar.add(mb4);
-		ar.add(mb5);
-		ar.add(mb6);
-		ar.add(mb7);
-		ar.add(mb8);
+//		for(int i=0; i<ar.size(); i++) {
+//			if(ar.get(i).getAge()>30) {
+//				System.out.println(ar.get(i));
+//			}
+//		}
+//		
 		
+		ArrayList<Aircon> ac = new ArrayList<Aircon>();
 		
-		for(int i=0; i<ar.size(); i++) {
-			if(ar.get(i).getAge()>30) {
-				System.out.println(ar.get(i));
+		ac.add(new Aircon("lg",91.8,1600000));
+		ac.add(new Aircon("삼성",23.9,870000));
+		ac.add(new Aircon("캐리어",10.2,600000));
+		ac.add(new Aircon("위니아",24.1,940000));
+		ac.add(new Aircon("파세코",43.6,620000));
+		ac.add(new Aircon("위닉스",19.8,770000));
+		ac.add(new Aircon("샤오미",20.6,510000));
+		
+		for(int i=0; i<ac.size(); i++) {
+			if(ac.get(i).getArea()<=20 && ac.get(i).getPrice()<800000) {
+				System.out.println(ac.get(i));
 			}
 		}
 		
