@@ -3,6 +3,7 @@ package studyyyyyy;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+
 public class Studyyyyy {
 
 	public static void main(String[] args) {
@@ -89,20 +90,46 @@ public class Studyyyyy {
 		
 		ArrayList<Aircon> ac = new ArrayList<Aircon>();
 		
-		ac.add(new Aircon("lg",91.8,1600000));
-		ac.add(new Aircon("삼성",23.9,870000));
-		ac.add(new Aircon("캐리어",10.2,600000));
-		ac.add(new Aircon("위니아",24.1,940000));
-		ac.add(new Aircon("파세코",43.6,620000));
-		ac.add(new Aircon("위닉스",19.8,770000));
-		ac.add(new Aircon("샤오미",20.6,510000));
+//		ac.add(new Aircon("lg",91.8,1600000));
+//		ac.add(new Aircon("삼성",23.9,870000));
+//		ac.add(new Aircon("캐리어",10.2,600000));
+//		ac.add(new Aircon("위니아",24.1,940000));
+//		ac.add(new Aircon("파세코",43.6,620000));
+//		ac.add(new Aircon("위닉스",19.8,770000));
+//		ac.add(new Aircon("샤오미",20.6,510000));
 		
-		for(int i=0; i<ac.size(); i++) {
-			if(ac.get(i).getArea()<=20 && ac.get(i).getPrice()<800000) {
-				System.out.println(ac.get(i));
+//		for(int i=0; i<ac.size(); i++) {
+//			if(ac.get(i).getArea()<=20 && ac.get(i).getPrice()<800000) {
+//				System.out.println(ac.get(i));
+//			}
+//		}
+//		
+		Scanner scan = new Scanner(System.in);
+		
+		
+		
+
+			while(true) {	
+			System.out.println("메뉴를 선택하세요 : ");
+			int menu=scan.nextInt();
+			switch(menu) {
+			case 1: 
+				System.out.println("원하는 에어컨 브랜드를 입력하세요 :");				
+				String brand=scan.next();
+				System.out.println("원하는 에어컨 평방을 입력하세요 :");
+				double area=scan.nextDouble();
+				System.out.println("원하는 에어컨 가격을 입력하세요 :");
+				int price=scan.nextInt();
+				ac.add(new Aircon(brand,area,price));
+				break;
+			case 2:
+				System.out.println(ac);
+				break;
+			case 3:
+				return;
+				
 			}
 		}
-		
 		
 		
 		
