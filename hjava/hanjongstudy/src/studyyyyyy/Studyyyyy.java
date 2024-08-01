@@ -104,6 +104,9 @@ public class Studyyyyy {
                 } else {
                     System.out.println("성적이 없습니다.");
                 }
+                for(Grade grade : gd) {
+                	grade.getScore();
+                }
                 break;
 			case 4:
 				scan.close();
