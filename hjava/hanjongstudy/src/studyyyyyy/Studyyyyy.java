@@ -59,18 +59,59 @@ public class Studyyyyy {
 //		System.out.println(al.get(2).getYear());
 //		
 		
-		ArrayList<Food> fd = new ArrayList<Food>();
+//		ArrayList<Food> fd = new ArrayList<Food>();
+//		
+//		fd.add(new Food("하림","불닭스파게티",3900));
+//		fd.add(new Food("두림","청양소시지",1800));
+//		fd.add(new Food("세림","와사비리조또",4000));
+//		fd.add(new Food("하림","불닭볶음탕",6000));
+//		fd.add(new Food("하림","구운파닭",3500));
+//		
+//		for(Food item : fd) {
+//			if(item.getBrand().equals("하림") && item.getPrice() <= 4000) {
+//				System.out.println(item);
+//			}
+//		}
 		
-		fd.add(new Food("하림","불닭스파게티",3900));
-		fd.add(new Food("두림","청양소시지",1800));
-		fd.add(new Food("세림","와사비리조또",4000));
-		fd.add(new Food("하림","불닭볶음탕",6000));
-		fd.add(new Food("하림","구운파닭",3500));
+		ArrayList<Grade> gd = new ArrayList<Grade>();
 		
-		for(Food item : fd) {
-			if(item.getBrand().equals("하림") && item.getPrice() <= 4000) {
-				System.out.println(item);
-			}
+		Scanner scan = new Scanner(System.in);		
+		
+		while(true) {
+			System.out.println("원하는 메뉴를 입력하세요 : ");
+			int mu = scan.nextInt();
+			
+			switch(mu) {
+			case 1:				
+				System.out.println("이름 :");
+				String name = scan.next();
+				System.out.println("성적 :");
+				int score = scan.nextInt();
+				gd.add(new Grade(name,score));	
+				
+				break;
+			case 2:				
+				System.out.println(gd);						
+				break;
+			case 3:
+                if (gd.size() > 0) {
+                    int sum = 0;
+                    for (Grade grade : gd) {
+                        sum += grade.getScore();
+                    }
+                    double average = sum / gd.size();
+                    System.out.println("평균은 : " + average);
+                } else {
+                    System.out.println("성적이 없습니다.");
+                }
+                break;
+			case 4:
+				scan.close();
+				return;
+			default:
+				System.out.println("다시 입력하세요");
+				
+				}
 		}
 		
 				
