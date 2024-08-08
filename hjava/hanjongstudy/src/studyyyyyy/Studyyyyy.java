@@ -124,62 +124,62 @@ public class Studyyyyy {
 //			}
 //		}
 //		
-		Scanner scan = new Scanner(System.in);
-		ArrayList<Aircon> ac = new ArrayList<Aircon>();
-		ArrayList<Tv> tv = new ArrayList<Tv>();
-		
-		
-		
-
-			while(true) {	
-			System.out.println("메뉴를 선택하세요 : ");
-			System.out.println("1번 : Tv 또는 Aircon 선택하여 배열에 추가하기");
-			System.out.println("2번 : 저장된 배열 모두 불러오기");
-			System.out.println("3번 : 종료하기");
-			int menu=scan.nextInt();
-			switch(menu) {
-			case 1:
-				boolean dk=false;
-				while(!dk) {
-				System.out.println("1번 : Tv , 2번 : Aircon");
-				int choose=scan.nextInt();
-				if(choose==1) {
-					System.out.println("브랜드를 입력하세요 : ");
-					String tvbrand=scan.next();
-					System.out.println("가격을 입력하세요 : ");
-					int tvprice=scan.nextInt();
-					System.out.println("인치를 입력하세요 : ");
-					int tvinch=scan.nextInt();
-					tv.add(new Tv(tvbrand,tvprice,tvinch));
-					dk=true;
-				}else if(choose==2) {
-					System.out.println("브랜드를 입력하세요 : ");
-					String airbrand=scan.next();
-					System.out.println("평방을 입력하세요 : ");
-					double airarea=scan.nextDouble();
-					System.out.println("가격를 입력하세요 : ");
-					int airprice=scan.nextInt();
-					ac.add(new Aircon(airbrand,airarea,airprice));
-					dk=true;
-				}else {
-					System.out.println("다시 선택하세요");
-					
-					}
-				}
-				break;
-			case 2:
-				System.out.println("Aircon목록 : "+ac);
-				System.out.println("Tv목록 : "+tv);
-				
-				break;
-			case 3:
-				scan.close();
-				return;
-			default:
-				System.out.println("다시 선택하세요");
-				
-			}
-		}
+//		Scanner scan = new Scanner(System.in);
+//		ArrayList<Aircon> ac = new ArrayList<Aircon>();
+//		ArrayList<Tv> tv = new ArrayList<Tv>();
+//		
+//		
+//		
+//
+//			while(true) {	
+//			System.out.println("메뉴를 선택하세요 : ");
+//			System.out.println("1번 : Tv 또는 Aircon 선택하여 배열에 추가하기");
+//			System.out.println("2번 : 저장된 배열 모두 불러오기");
+//			System.out.println("3번 : 종료하기");
+//			int menu=scan.nextInt();
+//			switch(menu) {
+//			case 1:
+//				boolean dk=false;
+//				while(!dk) {
+//				System.out.println("1번 : Tv , 2번 : Aircon");
+//				int choose=scan.nextInt();
+//				if(choose==1) {
+//					System.out.println("브랜드를 입력하세요 : ");
+//					String tvbrand=scan.next();
+//					System.out.println("가격을 입력하세요 : ");
+//					int tvprice=scan.nextInt();
+//					System.out.println("인치를 입력하세요 : ");
+//					int tvinch=scan.nextInt();
+//					tv.add(new Tv(tvbrand,tvprice,tvinch));
+//					dk=true;
+//				}else if(choose==2) {
+//					System.out.println("브랜드를 입력하세요 : ");
+//					String airbrand=scan.next();
+//					System.out.println("평방을 입력하세요 : ");
+//					double airarea=scan.nextDouble();
+//					System.out.println("가격를 입력하세요 : ");
+//					int airprice=scan.nextInt();
+//					ac.add(new Aircon(airbrand,airarea,airprice));
+//					dk=true;
+//				}else {
+//					System.out.println("다시 선택하세요");
+//					
+//					}
+//				}
+//				break;
+//			case 2:
+//				System.out.println("Aircon목록 : "+ac);
+//				System.out.println("Tv목록 : "+tv);
+//				
+//				break;
+//			case 3:
+//				scan.close();
+//				return;
+//			default:
+//				System.out.println("다시 선택하세요");
+//				
+//			}
+//		}
 
 		
 //		while(true) {
@@ -221,11 +221,9 @@ public class Studyyyyy {
 //				
 //				}
 //		}
-		
-				
-	}
-	
-	
+						
+	}	
 }
+
 
 
